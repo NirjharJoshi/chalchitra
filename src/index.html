@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalchitra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script defer type="module" src="./script.js"></script>
+</head>
+
+<body class="h-dvh bg-gradient-to-b from-slate-950 to-slate-800 text-stone-50">
+    <div class="relative">
+        <!-- movie details -->
+        <div id="modal" class="absolute w-dvw h-dvh bg-gray-100 bg-opacity-40 hidden">
+            <div id="modal-content"
+                class="w-1/2 text-black border border-transparent rounded-lg shadow-md shadow-slate-100 bg-gradient-to-br from-blue-700 to-blue-300 p-4 flex gap-6">
+
+            </div>
+        </div>
+        <div class="flex flex-col justify-evenly items-center mx-6 py-8">
+            <!-- search functionality -->
+            <form id="form-search" method="post">
+                <input id="title" type="text" name="title" placeholder="Enter movie title..."
+                    class="px-3 py-2 mx-2 bg-slate-100 border rounded-lg  shadow-2xl shadow-blue-400 text-slate-900" />
+                <button type="submit" class="text-2xl cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass fa-flip"></i>
+                </button>
+            </form>
+
+            <!-- search results -->
+            <div>
+                <div id="results" class="py-11 flex flex-wrap gap-5 md:gap-8 md:px-32">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
